@@ -6,6 +6,8 @@ import PortfolioHighlights from "../../components/PortfolioHighlights";
 import FoodSection from "../../components/FoodSection";
 import PhotoShotSection from "../../components/PhotoShotSection";
 import WeddingSection from "../../components/WeddingSection";
+import VideoPreviewSection from "../../components/VideoPreviewSection";
+import { reelClips, portraitClips } from "../../data/videoClips";
 import PodcastSection from "../../components/PodcastSection";
 import ReelsSection from "../../components/ReelsSection";
 import ProductSection from "../../components/ProductSection";
@@ -22,8 +24,22 @@ function Home() {
       <FoodSection />
       <PhotoShotSection />
       <WeddingSection />
+      <VideoPreviewSection
+        id="wedding-reels"
+        title="Product Photography Videos"
+        subtitle="videography"
+        variant="reel"
+        videos={portraitClips}
+        />
       <PodcastSection />
       <ReelsSection />
+      <VideoPreviewSection
+        id="wedding-portrait"
+       title="Product Photography Videos"
+        subtitle="videography"
+        variant="portrait"  
+        videos={reelClips}
+      />
       <ProductSection />
       <Contact />
       <Footer />
