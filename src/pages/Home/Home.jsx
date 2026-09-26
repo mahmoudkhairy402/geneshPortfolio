@@ -6,10 +6,12 @@ import PortfolioHighlights from "../../components/PortfolioHighlights";
 import FoodSection from "../../components/FoodSection";
 import PhotoShotSection from "../../components/PhotoShotSection";
 import WeddingSection from "../../components/WeddingSection";
+import AnnouncementsSection from "../../components/AnnouncementsSection";
 import VideoPreviewSection from "../../components/VideoPreviewSection";
 import { reelClips, portraitClips } from "../../data/videoClips";
 import PodcastSection from "../../components/PodcastSection";
 import ReelsSection from "../../components/ReelsSection";
+import ReviewShowcaseSection from "../../components/ReviewShowcaseSection";
 import ProductSection from "../../components/ProductSection";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
@@ -24,20 +26,22 @@ function Home() {
       <FoodSection />
       <PhotoShotSection />
       <WeddingSection />
+      <AnnouncementsSection />
       <VideoPreviewSection
-        id="wedding-reels"
-        title="Product Photography Videos"
-        subtitle="videography"
-        variant="reel"
+        id="commercial-reels"
+        title="Commercial Videography"
+        subtitle="motion & light"
+        variant="portrait"
         videos={portraitClips}
-        />
+      />
       <PodcastSection />
       <ReelsSection />
+      <ReviewShowcaseSection />
       <VideoPreviewSection
-        id="wedding-portrait"
-       title="Product Photography Videos"
-        subtitle="videography"
-        variant="portrait"  
+        id="product-reels"
+        title="Product In Motion"
+        subtitle="visual identity"
+        variant="reel"
         videos={reelClips}
       />
       <ProductSection />
